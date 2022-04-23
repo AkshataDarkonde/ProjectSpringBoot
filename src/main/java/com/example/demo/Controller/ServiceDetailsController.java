@@ -1,7 +1,6 @@
 package com.example.demo.Controller;
 
 import com.example.demo.Bean.Servicedetails;
-import com.example.demo.Repository.ServiceDetailsRepository;
 import com.example.demo.service.ServiceDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -22,10 +21,10 @@ public class ServiceDetailsController {
     }
 
     @GetMapping("/getServiceDetails/{ServiceId}")
-    Servicedetails getServiceId(@PathVariable("ServiceId") int ServiceId)
+    Servicedetails getServiceDetails(@PathVariable("ServiceId") int ServiceId)
     {
         System.out.println("From Get ServiceId Method.");
-        return serviceDetailsService.getServiceId(ServiceId);
+        return serviceDetailsService.getServiceDetails(ServiceId);
     }
 
     @PostMapping("/addServiceDetails")
@@ -42,10 +41,10 @@ public class ServiceDetailsController {
         return serviceDetailsService.updateServiceDetails(servicedetails);
     }
 
-    @DeleteMapping("/deleteServiceDetails/{serviceId}")
-    void deleteServiceDetails(@PathVariable("serviceId") int serviceId)
+    @DeleteMapping("/deleteServiceDetails/{ServiceId}")
+    void deleteServiceDetails(@PathVariable("ServiceId") int ServiceId)
     {
         System.out.println("From Delete ServiceDetails Method.");
-         serviceDetailsService.deleteServiceDetails(serviceId);
+         serviceDetailsService.deleteServiceDetails(ServiceId);
     }
 }

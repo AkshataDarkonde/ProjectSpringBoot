@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface SportsRepository extends CrudRepository<Sports,Integer>
 {
-    List<Sports> findByNoOfPlayers(int NoOfPlayers);
+    List<Sports> findByNoOfPlayers(int noOfPlayers);
 }

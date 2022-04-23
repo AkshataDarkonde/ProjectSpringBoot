@@ -19,12 +19,12 @@ public class ServiceDetailsService {
         return serviceList;
     }
 
-    public Servicedetails getServiceId(int serviceId)
+    public Servicedetails getServiceDetails(int ServiceId)
     {
         List<Servicedetails> serviceList = new ArrayList<>();
         Servicedetails servicedetails=new Servicedetails();
-        serviceDetailsRepository.findById(serviceId).get();
-        return serviceDetailsRepository.findById(serviceId).get();
+        serviceDetailsRepository.findById(ServiceId).get();
+        return serviceDetailsRepository.findById(ServiceId).get();
     }
 
     public Servicedetails addServiceDetails(Servicedetails servicedetails){

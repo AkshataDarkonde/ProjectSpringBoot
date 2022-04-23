@@ -13,9 +13,9 @@ public class SportsDetails {
     public SportsDetails() {
     }
 
-    public SportsDetails(int playerBookingId, int id, String status) {
+    public SportsDetails(int playerBookingId, int Sportsid, String status) {
         this.playerBookingId = playerBookingId;
-        this.Sportsid = id;
+        this.Sportsid = Sportsid;
         this.status = status;
     }
 

@@ -20,12 +20,12 @@ public class SportsDetailsController {
         return SportsDetailsList;
     }
 
-    @GetMapping("/getSportsDetails/{id}")
-    SportsDetails getSportsDetails(@PathVariable("id") int id)
+    @GetMapping("/getSportsDetails/{playerBookingid}")
+    SportsDetails getSportsDetails(@PathVariable("playerBookingid") int playerBookingid)
     {
         System.out.println("From Get Sportsdetails Method.");
 
-        return (SportsDetails) sportsDetailsService.getSportsDetails(id);
+        return (SportsDetails) sportsDetailsService.getSportsDetails(playerBookingid);
     }
 
     @PostMapping("/addSportsDetails")
@@ -42,10 +42,10 @@ public class SportsDetailsController {
         return sportsDetailsService.updateSportsDetails(sportsDetails);
     }
 
-    @DeleteMapping("/deleteSportsDetails/{Sportsid}")
-    void deleteSportsDetails(@PathVariable("Sportsid") int Sportsid)
+    @DeleteMapping("/deleteSportsDetails/{playerBookingid}")
+    void deleteSportsDetails(@PathVariable("playerBookingid") int playerBookingid)
     {
         System.out.println("From Delete SportsDetails Method.");
-        sportsDetailsService.deleteSportsDetails(Sportsid);
+        sportsDetailsService.deleteSportsDetails(playerBookingid);
     }
 }
