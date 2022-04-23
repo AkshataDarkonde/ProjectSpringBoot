@@ -42,10 +42,10 @@ public class SportsDetailsController {
         return sportsDetailsService.updateSportsDetails(sportsDetails);
     }
 
-    @DeleteMapping("/deleteSportsDetails/{userid}")
-    void deleteSportsDetails(@PathVariable("userid") int userid)
+    @DeleteMapping("/deleteSportsDetails/{Sportsid}")
+    void deleteSportsDetails(@PathVariable("Sportsid") int Sportsid)
     {
         System.out.println("From Delete SportsDetails Method.");
-        sportsDetailsService.deleteSportsDetails(userid);
+        sportsDetailsService.deleteSportsDetails(Sportsid);
     }
 }

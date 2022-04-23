@@ -47,7 +47,7 @@ public class SportsDetails {
     public String toString() {
         return "SprotsDetails{" +
                 "playerBookingId=" + playerBookingId +
-                ", id=" + Sportsid +
+                ", Sportsid=" + Sportsid +
                 ", status='" + status + '\'' +
                 '}';
     }

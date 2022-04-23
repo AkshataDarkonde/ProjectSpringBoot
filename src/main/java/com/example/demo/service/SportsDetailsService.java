@@ -37,9 +37,9 @@ public class SportsDetailsService {
         return sp2;
     }
 
-    public void deleteSportsDetails(int userid)
+    public void deleteSportsDetails(int Sportsid)
     {
-        sportsDetailsRepository.deleteById(userid);
+        sportsDetailsRepository.deleteById(Sportsid);
     }
 
 }
