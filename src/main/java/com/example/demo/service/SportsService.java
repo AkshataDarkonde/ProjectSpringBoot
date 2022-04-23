@@ -1,7 +1,6 @@
 package com.example.demo.service;
 
 import com.example.demo.Bean.Sports;
-import com.example.demo.Repository.SportsDetailsRepository;
 import com.example.demo.Repository.SportsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,12 +19,12 @@ public class SportsService {
         return SportsList;
     }
 
-    public Sports getSports(String SportsName)
+    public Sports getSports(int noOfPlayers)
     {
         List<Sports> SportsList = new ArrayList<>();
         Sports sports=new Sports();
-        sportsRepository.findById(SportsName).get();
-        return sportsRepository.findById(SportsName).get();
+        sportsRepository.findById(noOfPlayers).get();
+        return sportsRepository.findById(noOfPlayers).get();
     }
 
     public Sports addSports(Sports sports){
@@ -38,8 +37,8 @@ public class SportsService {
         return c2;
     }
 
-    public void deleteSports(String SportsName)
+    public void deleteByNoOfPlayers(int noOfPlayers)
     {
-        sportsRepository.deleteById(SportsName);
+        sportsRepository.deleteById(noOfPlayers);
     }
 }

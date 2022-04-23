@@ -6,5 +6,5 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 
 public interface ServiceDetailsRepository extends CrudRepository<Servicedetails,Integer> {
-    List<Servicedetails> findById(int serviceId);
+    List<Servicedetails> findByTime(int serviceId);
 }

@@ -7,7 +7,7 @@ import javax.persistence.Table;
 @Table(name="Sports Details")
 public class SportsDetails {
     private int playerBookingId;
-    private int id;
+    private int Sportsid;
     private String status;
 
     public SportsDetails() {
@@ -15,7 +15,7 @@ public class SportsDetails {
 
     public SportsDetails(int playerBookingId, int id, String status) {
         this.playerBookingId = playerBookingId;
-        this.id = id;
+        this.Sportsid = id;
         this.status = status;
     }
 
@@ -27,12 +27,12 @@ public class SportsDetails {
         this.playerBookingId = playerBookingId;
     }
 
-    public int getId() {
-        return id;
+    public int getSportsid() {
+        return Sportsid;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setSportsid(int sportsid) {
+        this.Sportsid = sportsid;
     }
 
     public String getStatus() {
@@ -47,7 +47,7 @@ public class SportsDetails {
     public String toString() {
         return "SprotsDetails{" +
                 "playerBookingId=" + playerBookingId +
-                ", id=" + id +
+                ", id=" + Sportsid +
                 ", status='" + status + '\'' +
                 '}';
     }

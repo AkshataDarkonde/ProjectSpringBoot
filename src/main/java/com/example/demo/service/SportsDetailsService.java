@@ -19,12 +19,12 @@ public class SportsDetailsService {
         return SportsDetailsList;
     }
 
-    public SportsDetailsRepository getSportsDetails(int id)
+    public SportsDetailsRepository getSportsDetails(int Sportsid)
     {
         List<SportsDetails> SportsDetailsList = new ArrayList<>();
         SportsDetails sportsDetails=new SportsDetails();
-        sportsDetailsRepository.findById(id).get();
-        return sportsDetailsRepository.findById(id).get();
+        sportsDetailsRepository.findById(Sportsid).get();
+        return (SportsDetailsRepository) sportsDetailsRepository.findById(Sportsid).get();
     }
 
     public SportsDetails addSportsDetails(SportsDetails sportsDetails){

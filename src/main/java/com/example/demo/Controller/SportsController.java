@@ -21,10 +21,10 @@ public class SportsController {
     }
 
     @GetMapping("/getSports/{name}")
-    Sports getSports(@PathVariable("SportsName") String SportsName)
+    Sports getSports(@PathVariable("SportsName") int Sportstime)
     {
         System.out.println("From Get Sports Method.");
-        return sportsService.getSports(SportsName);
+        return sportsService.getSports(Sportstime);
     }
 
     @PostMapping("/addSports")
@@ -42,9 +42,9 @@ public class SportsController {
     }
 
     @DeleteMapping("/deleteSports/{SportsName}")
-    void deleteSports(@PathVariable("SportsName") String SportsName)
+    void deleteNoOfPlayers(@PathVariable("SportsName") int NoOfPlayers)
     {
         System.out.println("From Delete Sports Method.");
-        sportsService.deleteSports(SportsName);
+        sportsService.deleteByNoOfPlayers(NoOfPlayers);
     }
 }

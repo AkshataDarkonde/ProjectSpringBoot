@@ -5,7 +5,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface SportsRepository extends CrudRepository<Sports,String>
+public interface SportsRepository extends CrudRepository<Sports,Integer>
 {
-    List<Sports> findByName(String name);
+    List<Sports> findByNoOfPlayers(int NoOfPlayers);
 }

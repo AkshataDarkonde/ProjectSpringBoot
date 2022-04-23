@@ -6,5 +6,5 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 
 public interface SportsDetailsRepository extends CrudRepository<SportsDetails,Integer> {
-    List<SportsDetails> findById(int id);
+    List<SportsDetails> findByStatus(String status);
 }
