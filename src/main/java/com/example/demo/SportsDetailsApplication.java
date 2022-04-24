@@ -1,7 +1,5 @@
 package com.example.demo;
 
-import com.example.demo.Bean.SportsDetails;
-import com.example.demo.Repository.SportsDetailsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

@@ -1,7 +1,7 @@
 package com.example.demo;
 
 import com.example.demo.Bean.Player;
-import com.example.demo.Repository.PlayerRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

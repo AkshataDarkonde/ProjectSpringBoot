@@ -16,7 +16,7 @@ public class PlayerController {
 
     List<Player> getAllPlayers(){
         System.out.println("From get all Player");
-        List<Player> PlayerList = PlayerService.getAllPlayers();
+        List<Player> PlayerList = playerService.getAllPlayers();
         return PlayerList;
     }
     @GetMapping("/getPlayer/{playerId}")
